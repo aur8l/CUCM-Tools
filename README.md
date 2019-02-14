@@ -8,6 +8,6 @@ This project was initiated following a client need for updating directory uris f
 This application is Java 1.8 based and uses Cisco AXL 10.5. It should be compatible for 8.5 - 10.5.
 
 ### To-do:
-- Make the application comaptible with Call Manager 12.5.
+- Make the application compatible with Call Manager 12.5.
 
 
