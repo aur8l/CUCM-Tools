@@ -8,7 +8,7 @@ This project was initiated following a client need for updating directory uris f
 This application is Java 1.8 based and uses Cisco AXL 10.5. It should be compatible for 8.5 - 10.5.
 
 ### Usage:
-'''
+```
 java -jar diruriupdater.jar OPTIONS
 Options category 'misc':
   --[no]help [-h] (a boolean; default: "true")
@@ -27,7 +27,7 @@ Options category 'startup':
     The AXL user name.
   --[no]wipe (a boolean; default: "true")
     Are you wiping the exisiting Directory URIs for DNs and users.
-'''
+```
 ### To-do:
 - Make the application compatible with Call Manager 12.5.
 - Either clean up the WSDL to remove unnecessary operations or use Apache CXF to generate the Java sources. This will allow removing the warning message about WSDL import AND speed up the creation of the AXLPort used to communicate with AXL.
