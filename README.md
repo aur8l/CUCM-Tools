@@ -28,6 +28,18 @@ Options category 'startup':
   --[no]wipe (a boolean; default: "true")
     Are you wiping the exisiting Directory URIs for DNs and users.
 ```
+
+#### configuration.xml
+A few directives are available for dynamically generating the uri:
+- Username
+Username can be inserted using %userid%
+
+- Directory number:
+Directory number can be inserted using %dn%
+
+- Device name:
+Directory number can be inserted using %phone%
+
 ### To-do:
 - Make the application compatible with Call Manager 12.5.
 - Either clean up the WSDL to remove unnecessary operations or use Apache CXF to generate the Java sources. This will allow removing the warning message about WSDL import AND speed up the creation of the AXLPort used to communicate with AXL.
