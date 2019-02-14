@@ -9,5 +9,6 @@ This application is Java 1.8 based and uses Cisco AXL 10.5. It should be compati
 
 ### To-do:
 - Make the application compatible with Call Manager 12.5.
+- Either clean up the WSDL to remove unnecessary operations or use Apache CXF to generate the Java sources. This will allow removing the warning message about WSDL import AND speed up the creation of the AXLPort used to communicate with AXL.
 
 
