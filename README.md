@@ -31,14 +31,11 @@ Options category 'startup':
 
 #### configuration.xml
 A few directives are available for dynamically generating the uri:
-- Username
-Username can be inserted using %userid%
+- Username: %userid%
 
-- Directory number:
-Directory number can be inserted using %dn%
+- Directory number: %dn%
 
-- Device name:
-Directory number can be inserted using %phone%
+- Device name: %phone%
 
 ### To-do:
 - Make the application compatible with Call Manager 12.5.
