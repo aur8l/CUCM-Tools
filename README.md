@@ -37,6 +37,26 @@ A few directives are available for dynamically generating the uri:
 
 - Device name: %phone%
 
+##### Example configuration.xml:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<directoryUris>
+	<directoryUri>
+		<uri>%userid%@awesome.stuff.nz</uri>
+		<partition>ICT</partition>
+		<primary>false</primary>
+		<advertiseGlobally>true</advertiseGlobally>
+	</directoryUri>
+	<directoryUri>
+		<uri>%dn%@cool.domain.nz</uri>
+		<partition>dp1_internal</partition>
+		<primary>false</primary>
+		<advertiseGlobally>true</advertiseGlobally>
+	</directoryUri>
+</directoryUris>
+```
+Running the tool with this configuration.xml will add 2 directory URI to the first DN of the first associated device for users (e.g. aur8l@awesome.stuff.nz and 54321@cool.domain.nz for a user with user id aur8l and dn 54321).
+
 ### To-do:
 - Make the application compatible with Call Manager 12.5.
 - Either clean up the WSDL to remove unnecessary operations or use Apache CXF to generate the Java sources. This will allow removing the warning message about WSDL import AND speed up the creation of the AXLPort used to communicate with AXL.
