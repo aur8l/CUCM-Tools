@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directoryUris>
+	<directoryUri>
+		<uri>%userid%@msd.govt.nz</uri>
+		<partition>msd_uri</partition>
+		<primary>false</primary>
+		<advertiseGlobally>true</advertiseGlobally>
+	</directoryUri>
+</directoryUris>
