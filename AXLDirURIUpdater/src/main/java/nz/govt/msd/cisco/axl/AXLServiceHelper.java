@@ -1,4 +1,4 @@
-package nz.co.aur8lsoft.cisco.axl;
+package nz.govt.msd.cisco.axl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import com.cisco.axlapiservice.AXLAPIService;
 import com.cisco.axlapiservice.AXLError;
 import com.cisco.axlapiservice.AXLPort;
 
-import nz.co.aur8lsoft.cisco.axl.model.CCMDirectoryNumber;
+import nz.govt.msd.cisco.axl.model.CCMDirectoryNumber;
 
 public class AXLServiceHelper {
 	String ucHost;

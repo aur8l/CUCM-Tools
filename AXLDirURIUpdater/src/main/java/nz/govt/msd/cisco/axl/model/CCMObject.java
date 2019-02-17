@@ -1,4 +1,4 @@
-package nz.co.aur8lsoft.cisco.axl.model;
+package nz.govt.msd.cisco.axl.model;
 
 public interface CCMObject {
 	

@@ -1,4 +1,4 @@
-package nz.co.aur8lsoft.cisco.axl;
+package nz.govt.msd.cisco.axl;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,9 +25,9 @@ import org.xml.sax.SAXException;
 import com.google.devtools.common.options.OptionsParser;
 import com.sun.xml.ws.client.ClientTransportException;
 
-import nz.co.aur8lsoft.cisco.axl.model.CCMDirectoryNumber;
-import nz.co.aur8lsoft.cisco.axl.model.CCMPhone;
-import nz.co.aur8lsoft.cisco.axl.model.CCMUser;
+import nz.govt.msd.cisco.axl.model.CCMDirectoryNumber;
+import nz.govt.msd.cisco.axl.model.CCMPhone;
+import nz.govt.msd.cisco.axl.model.CCMUser;
 
 public class DirURIUpdater {
 	
@@ -242,6 +242,12 @@ public class DirURIUpdater {
 					break; //we just need the user id index in the file (i.e. know which coumn holds the user id)
 				}
 				headersIndex++;
+			}
+			
+			if(userColumnIndex == -1) {
+				logger.info("File doesn't contain column USERID. Cannot continue. Please export file form Call Manager.");
+				
+				return;
 			}
 			
 			for(int i = 1; i < lines.size(); i++) {

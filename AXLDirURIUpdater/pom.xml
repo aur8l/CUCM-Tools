@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>nz.co.aur8lsoft.cisco</groupId>
+  <groupId>nz.govt.msd.voiceteam</groupId>
   <artifactId>AXLDirURIUpdater</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -22,11 +22,10 @@
       <configuration>
         <archive>
           <manifest>
-            <mainClass>nz.co.aur8lsoft.cisco.axl.DirURIUpdater</mainClass>
+            <mainClass>nz.govt.msd.cisco.axl.DirURIUpdater</mainClass>
           </manifest>
         </archive>
-        <finalName>diruriupdater</finalName>
-        <appendAssemblyId>false</appendAssemblyId>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <descriptorRefs>
           <descriptorRef>jar-with-dependencies</descriptorRef>
         </descriptorRefs>
@@ -96,5 +95,32 @@
 		    <artifactId>commons-lang3</artifactId>
 		    <version>3.8.1</version>
 		</dependency>
+    
+    <dependency>
+    <groupId>javax.xml.ws</groupId>
+    <artifactId>jaxws-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-core</artifactId>
+        <version>2.3.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.xml.soap</groupId>
+        <artifactId>javax.xml.soap-api</artifactId>
+        <version>1.3.5</version>
+    </dependency>
   </dependencies>
 </project>

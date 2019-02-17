@@ -1,6 +1,6 @@
-package nz.co.aur8lsoft.cisco.axl.model;
+package nz.govt.msd.cisco.axl.model;
 
-import nz.co.aur8lsoft.cisco.axl.AXLServiceHelper;
+import nz.govt.msd.cisco.axl.AXLServiceHelper;
 
 public class CCMApplicationUser implements CCMObject {
 

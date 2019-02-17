@@ -1,0 +1,8 @@
+11111
+Total of users to process in file: 100
+Total of users successfully processed: 90
+Number of Directory Numbers updated: 90
+Directory Numbers failed: 
+12345
+54321
+11111

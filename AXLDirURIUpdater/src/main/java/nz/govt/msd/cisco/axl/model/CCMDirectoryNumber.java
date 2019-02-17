@@ -1,4 +1,4 @@
-package nz.co.aur8lsoft.cisco.axl.model;
+package nz.govt.msd.cisco.axl.model;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -18,7 +18,7 @@ import com.cisco.axl.api._10.XFkType;
 import com.cisco.axl.api._10.XLine;
 import com.sun.xml.ws.client.ClientTransportException;
 
-import nz.co.aur8lsoft.cisco.axl.AXLServiceHelper;
+import nz.govt.msd.cisco.axl.AXLServiceHelper;
 
 public class CCMDirectoryNumber implements CCMObject {
 

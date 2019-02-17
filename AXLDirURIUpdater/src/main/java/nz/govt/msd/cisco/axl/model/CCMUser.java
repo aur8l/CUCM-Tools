@@ -1,4 +1,4 @@
-package nz.co.aur8lsoft.cisco.axl.model;
+package nz.govt.msd.cisco.axl.model;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import com.cisco.axl.api._10.StandardResponse;
 import com.cisco.axl.api._10.UpdateUserReq;
 import com.sun.xml.ws.client.ClientTransportException;
 
-import nz.co.aur8lsoft.cisco.axl.AXLServiceHelper;
+import nz.govt.msd.cisco.axl.AXLServiceHelper;
 
 public class CCMUser implements CCMObject {
 	
